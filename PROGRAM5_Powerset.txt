@@ -1,0 +1,25 @@
+//power set
+//Submission ID: 57465229
+//https://www.hackerearth.com/problem/algorithm/modified-power-set/
+#include<bits/stdc++.h>
+#include<iostream>
+using namespace std;
+int main()
+{
+int Q;
+cin >> Q;
+while(Q--)
+{
+set<char>str;
+string s;
+cin >> s;
+for(char x:s)
+{
+str.insert(x);
+}
+long long int n= str.size();
+long long int ans = n*(n+1)/2;
+cout << ans << endl;
+}
+return 0;
+}
