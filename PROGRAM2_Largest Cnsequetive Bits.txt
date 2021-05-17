@@ -1,0 +1,27 @@
+// program 2 Longest Consecutive 1's
+//https://practice.geeksforgeeks.org/problems/longest-consecutive-1s-1587115620/1/?category[]=Bit%20Magic&category[]=Bit%20Magic&page=1&query=category[]Bit%20Magicpage1category[]Bit%20Magic
+class Solution
+{
+    public:
+    int maxConsecutiveOnes(int N)
+    {
+        // code here
+        
+    int r=0,c=0;
+    while(N>0)
+    {
+    if((N&1)==1)
+    {
+    r++;
+    }
+    else
+    {
+    r=0;
+    }
+    N=N>>1;
+   
+   c=(r>c)?r:c;
+    }
+    return c;
+    }
+    };
