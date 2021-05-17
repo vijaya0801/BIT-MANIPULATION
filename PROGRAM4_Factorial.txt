@@ -1,0 +1,25 @@
+//factorial
+//hacker earth Submission ID: 57464554
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+int fact(int n);
+int main() {
+	int Q;
+	cin >> Q;
+	while(Q--)
+	{
+	int n,ans;  
+	cin>>n;
+	ans=fact(n);
+	cout<<ans<<"\n";
+	} 
+	return 0;
+}
+int fact(int N)
+{
+	if(N==0)
+	return 1;
+	else
+	return( N* fact(N-1));
+}
